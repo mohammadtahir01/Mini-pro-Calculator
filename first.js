@@ -15,5 +15,20 @@ function clr(){
 }
 
 function DE(){
-    document.querySelector("#display");
+    document.querySelector("#display").value = document.querySelector("#display").value.slice(0,-1);;
+}
+
+function solve(){
+   let x= document.querySelector("#display").value;
+   let y = eval(x);
+   document.querySelector("#display").value = y;
+}
+
+function sq(){
+    document.querySelector("#display").value;
+    let x = document.querySelector("#display").value;
+    let y = x*x;
+    document.querySelector("#display").value = y;
+    
+
 }
